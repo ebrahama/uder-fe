@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import{ Header,Hero,Footer,} from './components/colloc'
+import{ Discover,Detail,Seller,} from './pages/colloc'
+
+  import './App.css';
+  import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <div className='cen'>
+       <Hero/>  
+          <div>
+            <Routes>
+              <Route path="/" element={<Discover />} />
+              <Route path="/Detail/id:" element={<Detail />} />
+              <Route path="/sell" element={<Seller />} />
+            </Routes>
+          </div>
+
+       </div>
+
+       <Footer/>
     </div>
   );
 }
