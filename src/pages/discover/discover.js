@@ -1,9 +1,11 @@
 import React from 'react';
+import{Hero} from '../../components/colloc';
+
 
 const Discover = () => {
 
   return (
-    <div>discover-page</div>
+    <div> <Hero/></div>
   );
 };
 

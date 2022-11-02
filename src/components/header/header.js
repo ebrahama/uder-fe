@@ -1,15 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './header.css'
 const Header = () => {
 
   return (
     <div className='conta'>
-      f
+      <h1>uder</h1>
       <div className='ser'>
         <input></input>
         <button>sert</button>
       </div>
-      <button>seller</button>
+      <Link to ="/sell"><button>seller</button></Link>
+      
     </div>
   );
 };
