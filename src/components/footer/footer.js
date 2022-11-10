@@ -1,9 +1,13 @@
 import React from 'react';
-
+import './footer.css'
 const Footer = () => {
 
   return (
-    <div>Footer</div>
+    <footer>
+
+     <p>© Easybank. All Rights Reserved</p>
+
+    </footer>
   );
 };
 
