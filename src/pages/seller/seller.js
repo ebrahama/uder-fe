@@ -1,9 +1,14 @@
 import React from 'react';
+import { Auth } from '../../components/colloc';
 
 const Seller = () => {
 
   return (
-    <div>seller-page</div>
+    <>
+
+      <Auth/>
+    </>
+    
   );
 };
 
